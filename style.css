@@ -1,0 +1,21 @@
+body{
+background-color: rgb(23, 160, 179);
+}
+h1{
+    color:white;
+    text-align: center;
+    font-size: 450%;
+}
+p{
+    font-size: 150%;
+    text-align: left;
+    color:white;
+}
+.altp{
+    color:black;
+}
+h2{
+    color:black;
+    text-align: left;
+    font-size: 300%;
+}
