@@ -2,19 +2,24 @@ body{
 background-color: rgb(23, 160, 179);
 }
 h1{
+    grid-area: header;
     color:white;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 30px;
+    text-align: center;
+    text-align: ;
 }
 .kul{
+    grid-area: main;
     text-align: left;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     BORDER:1PX SOLID BLACK;
     border-radius: 5px;
+
 }
 .altp{
+    grid-area: main:
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -30,4 +35,40 @@ h2{
 }
 a{
     text-decoration:none;
+}
+.wrapper{
+    background-color: rgb(228, 108, 108);
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-rows: 80px 50px auto 50px;
+     "header"
+     "nav"
+     "main"
+     "footer"
+}
+nav > ul{
+    grid-area: nav;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+background-color: pink;
+}
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display:grid;
+    align-items: stretch;
+}
+footer{
+    grid-area: footer;
+    background-color: green;
+    text-align: center;
+}
+main{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 2f 2f;
+    grid-template: auto;
+    border: solid black 5px;
 }
